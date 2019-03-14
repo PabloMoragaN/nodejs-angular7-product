@@ -1,0 +1,46 @@
+/*
+*
+HOME
+*
+*/
+
+.jumb {
+    background: rgb(22, 115, 253);
+    padding: 50px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#btnVer {
+    margin-right: 10px;
+}
+
+#main {
+    margin-top: 30px;
+}
+
+
+/*
+*
+CREAR PRODUCTO
+*
+*/
+
+#form-crearProducto label {
+    margin-top: 10px;
+}
+
+
+/*
+*
+PRODUCT DETAIL
+*
+*/
+
+.imgProduct {
+    width: 100%;
+    max-height: 200px;
+    margin: 0px auto;
+    display: block;
+    max-width: 100%;
+}
