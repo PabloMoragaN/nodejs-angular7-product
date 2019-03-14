@@ -21,7 +21,7 @@ npm run dev
 
 Running locally on ```http://localhost:3000```  
 
-### BACKEND
+### BACKEND:
 ng serve   
 Running locally on ```http://localhost:4200```  
 
