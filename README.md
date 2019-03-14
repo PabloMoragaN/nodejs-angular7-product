@@ -17,12 +17,12 @@ express for server building
 "start": "node dist/index.js"  
 
 Dev environment running CLI command:  
-npm run dev  
+```npm run dev```  
 
 Running locally on ```http://localhost:3000```  
 
 ### BACKEND:
-ng serve   
+```ng serve```    
 Running locally on ```http://localhost:4200```  
 
 
