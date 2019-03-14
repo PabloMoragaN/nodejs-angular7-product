@@ -28,13 +28,13 @@ Running locally on ```http://localhost:4200```
 
 ## POSTMAN: 
 ### Get Users
-GET --> http://localhost:3000/users
+GET --> ```http://localhost:3000/users```  
 
 ### Get User by ID
-GET --> http://localhost:3000/users/id
+GET --> ```http://localhost:3000/users/id```  
 
 ### Crear User
- POST --> http://localhost:3000/users  
+ POST --> ```http://localhost:3000/users```    
 body-->raw :  
 
 ```
@@ -45,10 +45,10 @@ body-->raw :
 }
 ```
 ### Delete User
-DELETE --> http://localhost:3000/users/id  
+DELETE -->```http://localhost:3000/users/id```  
 
 ### Update user
-PUT-->http://localhost:3000/users/id  
+PUT--> ```http://localhost:3000/users/id```  
 body-->raw :  
 ```
 {
