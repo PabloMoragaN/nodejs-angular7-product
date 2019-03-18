@@ -1,27 +1,82 @@
-<h4 style="text-align: center">{{titulo}}</h4>
+<!--<div class="grid-container">
+    <div class="item1">
+        <h4 style="text-align: center">{{titulo}}</h4>
+    </div>
+    <div class="item2">
+        <div *ngIf="!producto">
+            <p>Cargando Producto</p>
+        </div>
+        <form style="margin:auto" *ngIf="producto" #formDetalleProducto class="col-lg-6">
+            <div class="form-group">
+                <label id="lblPrecio">Nombre </label>
+                <label type="text" class="form-control">{{producto.nombre}}</label>
+            </div>
+            <div class="form-group">
+                <label id="lblDescripcion">Descripción</label>
+                <textarea readonly type="text" class=" form-control">{{producto.descripcion}}</textarea>
+            </div>
+            <div class="form-group">
+                <label id="lblPrecio">Precio </label>
+                <label type="text" class="form-control">{{producto.precio}}</label>
+            </div>
+            <div class="form-group ">
+                <label id="lblImagen ">Imagen</label>
+                <input type="text" class="form-control" #imagen="ngModel" [(ngModel)]="producto.imagen" name="imagen" (change)="fileChangeEvent($event)" />
 
-<div *ngIf="!producto">
-    <p>Cargando Producto</p>
+            </div>
+        </form>
+
+    </div>
+    <div class="item3">
+
+        <a routerLink="/productos" id="btnVolver" class="btn btn-g btn-primary">Volver a productos</a>
+
+    </div>
+    <div class="item4">
+        <a routerLink="/home" id="btnVolver" class="btn btn-g btn-primary">Volver a Home</a>
+    </div>
+    <div class="item5">
+        
+    </div>
+</div>-->
+
+<div class="grid">
+    <div class="item1">
+        <h4 style="text-align: center">{{titulo}}</h4>
+    </div>
+    <div class="item2">
+        <div *ngIf="!producto">
+            <p>Cargando Producto</p>
+        </div>
+        <form style="margin:auto" *ngIf="producto" #formDetalleProducto class="col-lg-6">
+            <div class="form-group">
+                <label id="lblPrecio" class="font-weight-bold">Nombre:</label>
+                <label type="text" class="form-control">{{producto.nombre}}</label>
+            </div>
+            <div class="form-group">
+                <label id="lblDescripcion" class="font-weight-bold">Descripción:</label>
+                <textarea readonly type="text" class=" form-control">{{producto.descripcion}}</textarea>
+            </div>
+            <div class="form-group">
+                <label id="lblPrecio" class="font-weight-bold">Precio: </label>
+                <label type="text" class="form-control">{{producto.precio}}</label>
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <div class="item3">
+
+        <a routerLink="/productos" id="btnVolver" class="btn btn-g btn-primary">Volver a productos</a>
+
+    </div>
+    <div class="item4">
+        <a routerLink="/home" id="btnVolver" class="btn btn-g btn-primary">Volver a Home</a>
+    </div>
+    <div class="item5">
+
+        <img class="imgDetail" src="{{producto.imagen}}">
+    </div>
 </div>
-
-<form style="margin:auto" *ngIf="producto" #formDetalleProducto class="col-lg-6">
-    <div class="form-group">
-        <label id="lblPrecio">Nombre </label>
-        <label type="text" class="form-control">{{producto.nombre}}</label>
-    </div>
-    <div class="form-group">
-        <label id="lblDescripcion">Descripción</label>
-        <textarea readonly type="text" class=" form-control">{{producto.descripcion}}</textarea>
-    </div>
-    <div class="form-group">
-        <label id="lblPrecio">Precio </label>
-        <label type="text" class="form-control">{{producto.precio}}</label>
-    </div>
-    <div class="form-group ">
-        <label id="lblImagen ">Imagen</label>
-        <input type="text" class="form-control" #imagen="ngModel" [(ngModel)]="producto.imagen" name="imagen" (change)="fileChangeEvent($event)" />
-
-    </div>
-</form>
-
-<a style="float:right" routerLink="/productos" id="btnVolver" class="btn btn-g btn-primary">Volver a productos</a>

@@ -31,3 +31,11 @@ LISTAR PRODUCTOS
     height: 50%;
     overflow-y: scroll;
 }
+
+.imgProduct {
+    width: 100%;
+    max-height: 200px;
+    margin: 0px auto;
+    display: block;
+    max-width: 100%;
+}

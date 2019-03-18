@@ -8,6 +8,7 @@ import { GLOBAL } from '../../services/global';
 
     selector: 'producto-detail',
     templateUrl: '../views/producto-detail.html',
+    styleUrls: ['../../assets/producto-detail.css'],
     providers: [ProductoService]
 })
 

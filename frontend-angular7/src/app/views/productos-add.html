@@ -3,14 +3,14 @@
 <div>
     <form style="margin: auto" #formCrearProducto="ngForm" (ngSubmit)="onSubmit()" class="col-lg-6" id="form-crearProducto">
         <div class="form-group">
-            <label id="lblNombre">Nombre
+            <label id="lblNombre" class="font-weight-bold">Nombre:
                 <span *ngIf="!nombre.valid && nombre.touched" class="alert-danger">El nombre es obligatorio</span>
         </label>
             <input type="text" class="form-control" #nombre="ngModel" [(ngModel)]="producto.nombre" name="inputNombre" placeholder="Introduce nombre de producto" required/>
 
         </div>
         <div class="form-group">
-            <label id="lblDescripcion">Descripción
+            <label id="lblDescripcion" class="font-weight-bold">Descripción:
             <span *ngIf="!descripcion.valid && descripcion.touched" class="alert-danger">La descripción es obligatoria</span>
         </label>
             <textarea type="input" class=" form-control" #descripcion="ngModel" [(ngModel)]="producto.descripcion" name="descripcion" placeholder="Introduce descripción del producto " required></textarea>
@@ -18,7 +18,7 @@
 
         </div>
         <div class="form-group ">
-            <label id="lblPrecio ">Precio 
+            <label id="lblPrecio " class="font-weight-bold">Precio:
                 <span *ngIf="!precio.valid && precio.touched" class="alert-danger">El precio no es correcto</span>
         </label>
             <input type="text" class="form-control " #precio="ngModel" [(ngModel)]="producto.precio" name="precio" placeholder="Introduce el precio del producto" required pattern="[0-9]+" />
@@ -26,7 +26,7 @@
 
         </div>
         <div class="form-group ">
-            <label id="lblImagen ">Imagen</label>
+            <label id="lblImagen " class="font-weight-bold">Imagen:</label>
             <input type="text" class="form-control" #imagen="ngModel" [(ngModel)]="producto.imagen" name="imagen" (change)="fileChangeEvent($event)" />
 
         </div>

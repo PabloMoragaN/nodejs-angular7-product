@@ -4,6 +4,16 @@ APP.COMPONENT
 *
 */
 
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+.fontChange {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar {
+    max-height: 45px !important;
+    background: rgb(27, 27, 27) !important;
+}
+
 #content {
     margin-top: 30px;
     border: 1px solid #eee;
@@ -36,19 +46,19 @@ APP.COMPONENT
 
 #nav div li a {
     color: white;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
 }
 
 #nav div li:hover {
     text-decoration: none;
-    background: rgb(22, 115, 253);
-    border-radius: 7px;
+    background: rgb(112, 113, 114);
 }
 
 .activado {
     text-decoration: none !important;
     background: rgb(22, 115, 253) !important;
     border: 2px solid grey !important;
-    border-radius: 7px;
 }
 
 #footer {
@@ -110,7 +120,7 @@ SIDEBAR
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #343A40;
+    background: rgb(27, 27, 27);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -130,7 +140,7 @@ SIDEBAR
     position: absolute;
     top: 0;
     /*Size on nav items*/
-    width: 220px;
+    width: 195px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -179,7 +189,7 @@ SIDEBAR
     }
     #sidebar-wrapper {
         /*Size of dark column*/
-        width: 220px;
+        width: 195px;
     }
     #page-content-wrapper {
         padding: 20px;
@@ -191,18 +201,9 @@ SIDEBAR
     border-top: solid 1px #ffffff;
 }
 
-.borderTopBottom {
-    border-top: solid 1px #ffffff;
-    border-bottom: solid 1px #ffffff;
-    border-radius: 7px;
-}
-
 .borderWhole {
-    border-top: solid 1px #ffffff;
-    border-bottom: solid 1px #ffffff;
     border-right: solid 1px #ffffff;
     border-left: solid 1px #ffffff;
-    border-radius: 7px;
 }
 
 .borderBotLink {
